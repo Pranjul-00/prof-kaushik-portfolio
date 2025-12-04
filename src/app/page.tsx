@@ -131,13 +131,14 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center md:justify-end">
-            <div className="relative h-40 w-40 overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 shadow-sm md:h-52 md:w-52">
+            <div className="flex h-40 w-40 items-center justify-center overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 shadow-sm md:h-52 md:w-52">
               <Image
-                src="/profile-placeholder.jpg"
-                alt="Portrait placeholder for Prof. Mahima Kaushik"
-                fill
-                sizes="(min-width: 768px) 13rem, 10rem"
-                className="object-cover"
+                src="/next.svg"
+                alt="Portrait placeholder"
+                width={120}
+                height={40}
+                className="opacity-70"
+                priority
               />
             </div>
           </div>
