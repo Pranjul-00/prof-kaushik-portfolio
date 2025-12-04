@@ -60,24 +60,24 @@ const achievements = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
-      <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/80 backdrop-blur">
+    <div className="min-h-screen bg-slate-100 text-slate-900">
+      <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4">
           <div className="flex items-baseline gap-2">
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-700">
               Chemistry Portfolio
             </span>
             <span className="hidden text-xs text-slate-400 md:inline">|</span>
-            <p className="text-sm font-medium text-slate-900 md:text-base">
+            <p className="text-sm font-semibold text-slate-900 md:text-base">
               Prof. Mahima Kaushik
             </p>
           </div>
-          <nav className="hidden items-center gap-5 text-xs font-medium text-slate-600 md:flex md:text-sm">
+          <nav className="hidden items-center gap-5 rounded-full border border-slate-200 bg-white/80 px-4 py-1 text-xs font-medium text-slate-600 shadow-sm md:flex md:text-sm">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="transition-colors hover:text-sky-700"
+                className="transition-colors hover:text-sky-800"
               >
                 {link.label}
               </a>
@@ -86,10 +86,10 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="mx-auto flex max-w-6xl flex-col gap-16 px-4 py-10 md:gap-20 md:py-16">
+      <main className="mx-auto flex max-w-6xl flex-col gap-12 px-4 py-10 md:gap-16 md:py-16">
         <section
           id="about"
-          className="grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] md:items-center"
+          className="grid gap-10 rounded-3xl bg-gradient-to-br from-sky-50 via-slate-50 to-slate-100 px-5 py-8 shadow-sm ring-1 ring-slate-200 md:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] md:items-center md:px-10 md:py-10"
         >
           <div className="space-y-5 md:space-y-6">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-700">
@@ -98,23 +98,23 @@ export default function Home() {
             <h1 className="text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
               Prof. Mahima Kaushik
             </h1>
-            <p className="max-w-2xl text-sm leading-relaxed text-slate-700 md:text-base">
+            <p className="max-w-2xl text-base leading-relaxed text-slate-800 md:text-lg">
               Chemistry academic and researcher with interests in nucleic acids, DNA secondary
               structures, and nanobiotechnology, with a strong commitment to teaching and mentoring
               students at the interface of chemistry and biology.
             </p>
             <div className="flex flex-wrap gap-3 text-xs md:text-sm">
-              <span className="rounded-full bg-sky-50 px-3 py-1 font-medium text-sky-800">
+              <span className="rounded-full bg-sky-100 px-3 py-1 font-medium text-sky-800">
                 Nucleic acids & biophysical chemistry
               </span>
-              <span className="rounded-full bg-emerald-50 px-3 py-1 font-medium text-emerald-800">
+              <span className="rounded-full bg-emerald-100 px-3 py-1 font-medium text-emerald-800">
                 Nanobiotechnology
               </span>
-              <span className="rounded-full bg-violet-50 px-3 py-1 font-medium text-violet-800">
+              <span className="rounded-full bg-violet-100 px-3 py-1 font-medium text-violet-800">
                 Chemistry education
               </span>
             </div>
-            <div className="flex flex-wrap gap-3 pt-2 text-xs md:text-sm">
+            <div className="flex flex-wrap gap-3 pt-3 text-xs md:text-sm">
               <Link
                 href="#research"
                 className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 font-medium text-slate-50 shadow-sm transition hover:bg-slate-800"
@@ -144,7 +144,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="research" className="space-y-5 md:space-y-6">
+        <section
+          id="research"
+          className="space-y-5 rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200 md:space-y-6 md:p-8"
+        >
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-700">
               Research Focus
@@ -174,7 +177,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="publications" className="space-y-5 md:space-y-6">
+        <section
+          id="publications"
+          className="space-y-5 rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200 md:space-y-6 md:p-8"
+        >
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-700">
               Publications
@@ -207,7 +213,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="teaching" className="space-y-5 md:space-y-6">
+        <section
+          id="teaching"
+          className="space-y-5 rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200 md:space-y-6 md:p-8"
+        >
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-700">
               Teaching
@@ -232,7 +241,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="education" className="space-y-5 md:space-y-6">
+        <section
+          id="education"
+          className="space-y-5 rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200 md:space-y-6 md:p-8"
+        >
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-700">
               Education & Positions
@@ -252,7 +264,10 @@ export default function Home() {
           </ol>
         </section>
 
-        <section id="achievements" className="space-y-5 md:space-y-6">
+        <section
+          id="achievements"
+          className="space-y-5 rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200 md:space-y-6 md:p-8"
+        >
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-700">
               Achievements
@@ -273,7 +288,10 @@ export default function Home() {
           </ul>
         </section>
 
-        <section id="media" className="space-y-5 md:space-y-6">
+        <section
+          id="media"
+          className="space-y-5 rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200 md:space-y-6 md:p-8"
+        >
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-700">
               Media & Outreach
@@ -313,7 +331,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="space-y-5 md:space-y-6">
+        <section
+          id="contact"
+          className="space-y-5 rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200 md:space-y-6 md:p-8"
+        >
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-700">
               Contact
